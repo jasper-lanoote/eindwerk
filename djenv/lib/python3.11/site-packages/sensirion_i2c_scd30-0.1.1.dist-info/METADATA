@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: sensirion-i2c-scd30
+Version: 0.1.1
+Summary: I2C driver for the Sensirion SCD30 sensor family
+Home-page: https://sensirion.github.io/python-i2c-scd30/
+Author: Sensirion
+Author-email: info@sensirion.com
+License: BSD
+Keywords: Sensirion SCD30
+        I2C
+        SCD30
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6, <4
+License-File: LICENSE
+Requires-Dist: sensirion-i2c-driver
+Requires-Dist: sensirion-i2c-adapter
+Requires-Dist: sensirion-driver-support-types~=0.1.0
+Requires-Dist: sensirion-shdlc-sensorbridge<0.3.0,>=0.1.1
+Provides-Extra: docs
+Requires-Dist: click==8.0.4; extra == "docs"
+Requires-Dist: jinja2==3.0.1; extra == "docs"
+Requires-Dist: sphinx~=2.2.1; extra == "docs"
+Requires-Dist: sphinx-rtd-theme~=0.4.3; extra == "docs"
+Provides-Extra: test
+Requires-Dist: flake8~=3.7.8; extra == "test"
+Requires-Dist: pytest~=6.2.5; extra == "test"
+Requires-Dist: pytest-cov~=3.0.0; extra == "test"
+
+sensirion_i2c_scd30
+===================
+
+This package contains the driver to communicate with the Sensirion
+SCD30 sensor over I2C.
+
+Installation and Usage
+----------------------
+
+The user manual is available at
+https://sensirion.github.io/python-i2c-scd30
+
+CHANGELOG
+---------
+
+0.1.1
+:::::
+- Fix allowed version for sensirion-shdlc-sensorbridge
+
+0.1.0
+:::::
+- Initial release of SCD30 I2C driver
