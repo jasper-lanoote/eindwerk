@@ -41,17 +41,17 @@ export default function Livesensor() {
 
   return (
     <div>
-      <h1>Sensor Gegevens</h1>
+      <h2>Live sensor data</h2>
       {/* Controleer of we data ontvangen hebben */}
       {sensorData ? (
         <table>
           <thead>
             <tr>
-              <th>Temperatuur (°C)</th>
-              <th>Vochtigheid (%)</th>
-              <th>Druk (hPa)</th>
-              <th>Gas (PPM)</th>
-              <th>Wind Snelheid (km/h)</th>
+              <th> Temperatuur °C </th>
+              <th> Vochtigheid % </th>
+              <th> Druk hPa </th>
+              <th> Gas PPM </th>
+              <th> Wind Snelheid km/h </th>
             </tr>
           </thead>
           <tbody>
