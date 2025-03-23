@@ -1,0 +1,5 @@
+.flexbox {
+    display: flex;
+    align-items: space-around;
+    flex-direction: column;
+}

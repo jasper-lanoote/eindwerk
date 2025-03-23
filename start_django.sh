@@ -28,3 +28,12 @@ nohup python manage.py log_sensor_data > /home/JasperLanoote/pidjango/sensor.log
 
 
 echo "Django server en processen zijn gestart!"
+
+echo "React app wordt gestart..."
+
+cd /home/JasperLanoote/pidjango/react_website
+
+# Start de React-app
+nohup npm run dev > /home/JasperLanoote/pidjango/react_website/react.log 2>&1 &
+
+echo "React app is gestart!"

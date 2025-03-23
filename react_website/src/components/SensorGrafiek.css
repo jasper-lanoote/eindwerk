@@ -1,0 +1,100 @@
+/* === Algemene styling === */
+.sensor-grafiek {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.sensor-grafiek h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* === Controls === */
+.sensor-grafiek__controls {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+    align-items: center;
+}
+
+.sensor-grafiek__datepicker {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 180px;
+    background-color: #ffffff;
+    transition: border-color 0.2s ease;
+}
+
+/* Focused datepicker border */
+.sensor-grafiek__datepicker:focus {
+    border-color: #4CAF50;
+    /* Change border color on focus */
+    outline: none;
+    /* Remove outline */
+}
+
+/* === Dropdown styling === */
+.sensor-grafiek__dropdown {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #333;
+    transition: border-color 0.2s ease;
+}
+
+/* Hover effect on dropdown */
+.sensor-grafiek__dropdown:hover {
+    border-color: #4CAF50;
+}
+
+/* Focused dropdown border */
+.sensor-grafiek__dropdown:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+/* === Checkbox styling === */
+.sensor-grafiek__checkboxes {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.sensor-grafiek__checkbox label {
+    font-size: 16px;
+    color: #333;
+}
+
+.sensor-grafiek__checkbox input {
+    margin-right: 8px;
+}
+
+/* === Grafiek === */
+.recharts-wrapper {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* === Hover-effect op grafieklijnen === */
+.recharts-line {
+    transition: stroke 0.2s ease;
+}
+
+.recharts-line:hover {
+    stroke: #4CAF50;
+}

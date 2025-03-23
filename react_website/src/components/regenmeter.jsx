@@ -1,114 +1,159 @@
 import React, { useEffect, useState } from 'react';
-import Chart from 'chart.js/auto'; // Importeer Chart.js
+import axios from 'axios';
+import dayjs from 'dayjs';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
+import './Regenmeter.css';
+
+const apiEndPoint = 'http://192.168.0.232:8000/Weerstation/api/regenmetingen/';
 
 const RegenMetingenGrafiek = () => {
-  const [dataPerDag, setDataPerDag] = useState({});
-  const [selectedDay, setSelectedDay] = useState('');
-  const [chart, setChart] = useState(null);
+  const [data, setData] = useState([]);
+  const [filteredData, setFilteredData] = useState([]);
+  const [selectedDate, setSelectedDate] = useState(new Date());
+  const [timeFilter, setTimeFilter] = useState('day');
 
   useEffect(() => {
-    // Haal de data op van de Django API
-    fetch('http://192.168.0.232:8000/Weerstation/api/regenmetingen/') // Pas deze URL aan naar jouw Django API
-      .then(response => response.json())
-      .then(data => {
-        // Organiseer de data per dag
-        const groupedData = groupDataByDay(data);
-        setDataPerDag(groupedData);
-
-        // Stel de eerste dag in
-        const firstDay = Object.keys(groupedData)[0];
-        if (firstDay) {
-          setSelectedDay(firstDay);
-        }
-      })
+    // Data ophalen van API met axios
+    axios.get(apiEndPoint)
+      .then(response => setData(response.data))
       .catch(error => console.error('Fout bij het ophalen van data:', error));
   }, []);
 
   useEffect(() => {
-    // Als er een geselecteerde dag is, maak de grafiek
-    if (selectedDay && dataPerDag[selectedDay]) {
-      const uren = Array.from({ length: 24 }, (_, i) => `${i}:00`);
-      const regenData = dataPerDag[selectedDay] || [];
+    // Data filteren op basis van datum en filter
+    filterData();
+  }, [data, selectedDate, timeFilter]);
 
-      // Verwijder de oude grafiek als die bestaat
-      if (chart) {
-        chart.destroy();
-      }
+  const filterData = () => {
+    const selected = dayjs(selectedDate);
 
-      // Maak de nieuwe grafiek
-      const ctx = document.getElementById('regenGrafiek').getContext('2d');
-      const newChart = new Chart(ctx, {
-        type: 'bar', // Staafdiagram
-        data: {
-          labels: uren, // Urenlabels
-          datasets: [
-            {
-              label: 'Regenval per Uur (mm)',
-              data: regenData,
-              backgroundColor: 'rgba(75, 192, 192, 0.2)',
-              borderColor: 'rgba(75, 192, 192, 1)',
-              borderWidth: 1,
-            },
-          ],
-        },
-        options: {
-          scales: {
-            x: {
-              title: {
-                display: true,
-                text: 'Uur',
-              },
-            },
-            y: {
-              title: {
-                display: true,
-                text: 'Regenval (mm)',
-              },
-              beginAtZero: true,
-            },
-          },
-        },
+    let filtered = data
+      .filter(item => {
+        const date = dayjs(item.tijdstip);
+        switch (timeFilter) {
+          case 'day':
+            return date.isSame(selected, 'day');
+          case 'week':
+            return date.isSame(selected, 'week');
+          case 'month':
+            return date.isSame(selected, 'month');
+          case 'year':
+            return date.isSame(selected, 'year');
+          default:
+            return true;
+        }
       });
 
-      setChart(newChart);
+    if (timeFilter === 'day') {
+      // Groeperen per uur als "dag" geselecteerd is
+      const hourlyData = Array.from({ length: 24 }, (_, i) => ({
+        tijd: `${i}:00`,
+        regenval: 0
+      }));
+
+      filtered.forEach(item => {
+        const uur = dayjs(item.tijdstip).hour();
+        hourlyData[uur].regenval += item.regenval ?? 0;
+      });
+
+      setFilteredData(hourlyData);
+    } else if (timeFilter === 'week') {
+      // Groeperen per dag als "week" geselecteerd is
+      const dailyData = {};
+
+      filtered.forEach(item => {
+        const dag = dayjs(item.tijdstip).format('YYYY-MM-DD');
+        if (!dailyData[dag]) {
+          dailyData[dag] = 0;
+        }
+        dailyData[dag] += item.regenval ?? 0;
+      });
+
+      const formattedDailyData = Object.keys(dailyData).map(dag => ({
+        tijd: dag,
+        regenval: dailyData[dag]
+      }));
+
+      setFilteredData(formattedDailyData);
+    } else if (timeFilter === 'month') {
+      // Groeperen per maand als "month" geselecteerd is
+      const monthlyData = {};
+
+      filtered.forEach(item => {
+        const maand = dayjs(item.tijdstip).format('YYYY-MM');
+        if (!monthlyData[maand]) {
+          monthlyData[maand] = 0;
+        }
+        monthlyData[maand] += item.regenval ?? 0;
+      });
+
+      const formattedMonthlyData = Object.keys(monthlyData).map(maand => ({
+        tijd: maand,
+        regenval: monthlyData[maand]
+      }));
+
+      setFilteredData(formattedMonthlyData);
+    } else if (timeFilter === 'year') {
+      // Groeperen per jaar als "year" geselecteerd is
+      const yearlyData = {};
+
+      filtered.forEach(item => {
+        const jaar = dayjs(item.tijdstip).format('YYYY');
+        if (!yearlyData[jaar]) {
+          yearlyData[jaar] = 0;
+        }
+        yearlyData[jaar] += item.regenval ?? 0;
+      });
+
+      const formattedYearlyData = Object.keys(yearlyData).map(jaar => ({
+        tijd: jaar,
+        regenval: yearlyData[jaar]
+      }));
+
+      setFilteredData(formattedYearlyData);
     }
-  }, [selectedDay, dataPerDag]);
-
-  // Functie om de data te groeperen op basis van de dag
-  const groupDataByDay = (data) => {
-    const grouped = {};
-    data.forEach((item) => {
-      const dag = item.tijdstip.split('T')[0]; // Datum zonder tijd
-      if (!grouped[dag]) {
-        grouped[dag] = new Array(24).fill(0); // Maak een array van 24 uren, ingevuld met nullen
-      }
-      const uur = new Date(item.tijdstip).getHours(); // Verkrijg het uur van de tijd
-      grouped[dag][uur] += item.regenval; // Voeg de regenval toe voor het juiste uur
-    });
-    return grouped;
-  };
-
-  // Functie om de data voor een dag te krijgen
-  const handleDayChange = (event) => {
-    setSelectedDay(event.target.value);
   };
 
   return (
-    <div>
-      <h1>Regenmetingen per Uur</h1>
+    <div className="regen-grafiek">
+      <h2>Regenmetingen</h2>
+      
+      <div className="regen-grafiek__controls">
+        {/*Datumkiezer */}
+        <div className="regen-grafiek__datepicker-container">
+          <DatePicker
+            selected={selectedDate}
+            onChange={(date) => setSelectedDate(date)}
+            dateFormat="yyyy-MM-dd"
+            placeholderText="Selecteer een datum"
+            className="regen-grafiek__datepicker"
+          />
+        </div>
 
-      {/* Dropdown-menu voor dagen */}
-      <label htmlFor="daySelector">Selecteer een dag:</label>
-      <select id="daySelector" onChange={handleDayChange} value={selectedDay}>
-        {Object.keys(dataPerDag).map((dag) => (
-          <option key={dag} value={dag}>
-            {dag}
-          </option>
-        ))}
-      </select>
+        {/*Tijdfilters */}
+        <select 
+          className="regen-grafiek__dropdown" 
+          value={timeFilter} 
+          onChange={(e) => setTimeFilter(e.target.value)}
+        >
+          <option value="day">Dag</option>
+          <option value="week">Week</option>
+          <option value="month">Maand</option>
+          <option value="year">Jaar</option>
+        </select>
+      </div>
 
-      {/* Grafiek */}
-      <canvas id="regenGrafiek" width="400" height="200"></canvas>
+      {/*Grafiek */}
+      <BarChart width={800} height={400} data={filteredData}>
+        <CartesianGrid strokeDasharray="3 3" />
+        <XAxis dataKey="tijd" />
+        <YAxis />
+        <Tooltip />
+        <Legend />
+        <Bar dataKey="regenval" fill="#82ca9d" />
+      </BarChart>
     </div>
   );
 };

@@ -1,4 +1,4 @@
-// import './App.css'
+import './App.css'
 // import Livesensor from './components/Livesensor'
 // import SensorGrafiek from './components/SensorGrafiek'
 // import RegenMetingenGrafiek from './components/regenmeter'
@@ -11,6 +11,7 @@ export default function App() {
   
   return (
     <>
+    <div className='flexbox'>
     <Router>
         <Routes>
           <Route element={<Layout />}>
@@ -19,7 +20,7 @@ export default function App() {
           </Route>
         </Routes>
       </Router>
-
+      </div>
     </>
   )
 }
