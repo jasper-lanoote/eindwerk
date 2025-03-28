@@ -6,7 +6,7 @@ import 'react-datepicker/dist/react-datepicker.css';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 import './Regenmeter.css';
 
-const apiEndPoint = 'http://192.168.0.232:8000/Weerstation/api/regenmetingen/';
+const apiEndPoint = 'http://localhost:8000/Weerstation/api/regenmetingen/';
 
 const RegenMetingenGrafiek = () => {
   const [data, setData] = useState([]);

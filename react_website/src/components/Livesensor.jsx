@@ -7,7 +7,7 @@ export default function Livesensor() {
 
   useEffect(() => {
     // Maak de WebSocket-verbinding
-    const ws = new WebSocket('ws://192.168.0.232:8000/ws/sensoren/');
+    const ws = new WebSocket('ws://localhost:8000/ws/liveSensorData/');
 
     // Wanneer de verbinding is geopend
     ws.onopen = () => {

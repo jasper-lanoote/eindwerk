@@ -1,0 +1,161 @@
+Start met tellen gedurende een minuut...
+Sent data: {'temperature': 21.3, 'humidity': 54, 'pressure': 1012.14, 'gas': 98089, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.4, 'humidity': 54, 'pressure': 1012.13, 'gas': 25059, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.4, 'humidity': 54, 'pressure': 1012.13, 'gas': 26296, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.4, 'humidity': 54, 'pressure': 1012.12, 'gas': 27571, 'wind_speed_kmh': 0.0}
+Tijdstip: 2025-03-28 20:21:15, Totaal aantal drukken: 0, Regenval: 0.00 mm
+Verstuurd naar RegenSensorUpload WebSocket: {'regenval': 0.0, 'tijdstip': '2025-03-28 20:21:15'}
+Start met tellen gedurende een minuut...
+Sent data: {'temperature': 21.5, 'humidity': 54, 'pressure': 1012.11, 'gas': 28621, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.5, 'humidity': 54, 'pressure': 1012.11, 'gas': 29755, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.5, 'humidity': 53, 'pressure': 1012.1, 'gas': 30710, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.5, 'humidity': 53, 'pressure': 1012.11, 'gas': 31351, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.5, 'humidity': 53, 'pressure': 1012.1, 'gas': 32290, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.6, 'humidity': 53, 'pressure': 1012.1, 'gas': 32793, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.6, 'humidity': 53, 'pressure': 1012.1, 'gas': 33260, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.6, 'humidity': 53, 'pressure': 1012.1, 'gas': 34067, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.6, 'humidity': 53, 'pressure': 1012.1, 'gas': 34916, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.6, 'humidity': 53, 'pressure': 1012.1, 'gas': 35445, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.7, 'humidity': 53, 'pressure': 1012.1, 'gas': 36022, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.7, 'humidity': 53, 'pressure': 1012.1, 'gas': 36554, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.7, 'humidity': 53, 'pressure': 1012.1, 'gas': 37200, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.7, 'humidity': 53, 'pressure': 1012.11, 'gas': 37565, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.7, 'humidity': 53, 'pressure': 1012.1, 'gas': 37870, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.7, 'humidity': 53, 'pressure': 1012.1, 'gas': 38248, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.7, 'humidity': 53, 'pressure': 1012.11, 'gas': 38742, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.7, 'humidity': 53, 'pressure': 1012.1, 'gas': 39102, 'wind_speed_kmh': 0.0}
+Tijdstip: 2025-03-28 20:22:15, Totaal aantal drukken: 0, Regenval: 0.00 mm
+Verstuurd naar RegenSensorUpload WebSocket: {'regenval': 0.0, 'tijdstip': '2025-03-28 20:22:15'}
+Start met tellen gedurende een minuut...
+Sent data: {'temperature': 21.7, 'humidity': 53, 'pressure': 1012.11, 'gas': 39174, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.7, 'humidity': 53, 'pressure': 1012.11, 'gas': 39358, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.7, 'humidity': 53, 'pressure': 1012.12, 'gas': 40070, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.7, 'humidity': 53, 'pressure': 1012.11, 'gas': 40339, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.7, 'humidity': 53, 'pressure': 1012.11, 'gas': 40729, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.7, 'humidity': 53, 'pressure': 1012.11, 'gas': 41127, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.7, 'humidity': 53, 'pressure': 1012.11, 'gas': 41411, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.7, 'humidity': 53, 'pressure': 1012.11, 'gas': 41781, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.7, 'humidity': 53, 'pressure': 1012.12, 'gas': 41906, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.12, 'gas': 42242, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.12, 'gas': 42200, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.12, 'gas': 42584, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.12, 'gas': 42888, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.12, 'gas': 42845, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.12, 'gas': 43285, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.13, 'gas': 43152, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.12, 'gas': 43152, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.12, 'gas': 43375, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.13, 'gas': 43285, 'wind_speed_kmh': 0.0}
+Tijdstip: 2025-03-28 20:23:16, Totaal aantal drukken: 0, Regenval: 0.00 mm
+Verstuurd naar RegenSensorUpload WebSocket: {'regenval': 0.0, 'tijdstip': '2025-03-28 20:23:16'}
+Start met tellen gedurende een minuut...
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.12, 'gas': 43599, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.13, 'gas': 44010, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.14, 'gas': 43964, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.14, 'gas': 44148, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.14, 'gas': 44056, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.14, 'gas': 44522, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.14, 'gas': 44711, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.13, 'gas': 44854, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.13, 'gas': 44950, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.13, 'gas': 45192, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.13, 'gas': 45240, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.13, 'gas': 45289, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.13, 'gas': 45387, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.13, 'gas': 45289, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.13, 'gas': 45485, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.14, 'gas': 45583, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.15, 'gas': 45732, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.14, 'gas': 45682, 'wind_speed_kmh': 0.0}
+Tijdstip: 2025-03-28 20:24:16, Totaal aantal drukken: 0, Regenval: 0.00 mm
+Verstuurd naar RegenSensorUpload WebSocket: {'regenval': 0.0, 'tijdstip': '2025-03-28 20:24:16'}
+Start met tellen gedurende een minuut...
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.15, 'gas': 45732, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.14, 'gas': 45832, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.15, 'gas': 45782, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.9, 'humidity': 53, 'pressure': 1012.14, 'gas': 46032, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.9, 'humidity': 53, 'pressure': 1012.14, 'gas': 46083, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.9, 'humidity': 53, 'pressure': 1012.15, 'gas': 45881, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.9, 'humidity': 53, 'pressure': 1012.14, 'gas': 46336, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.9, 'humidity': 53, 'pressure': 1012.15, 'gas': 46336, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.9, 'humidity': 52, 'pressure': 1012.15, 'gas': 46336, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 22.0, 'humidity': 52, 'pressure': 1012.15, 'gas': 46285, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 22.0, 'humidity': 52, 'pressure': 1012.16, 'gas': 46439, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 22.0, 'humidity': 52, 'pressure': 1012.15, 'gas': 46490, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 22.0, 'humidity': 52, 'pressure': 1012.15, 'gas': 46336, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 22.0, 'humidity': 52, 'pressure': 1012.15, 'gas': 46800, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 22.0, 'humidity': 52, 'pressure': 1012.15, 'gas': 46852, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 22.0, 'humidity': 52, 'pressure': 1012.16, 'gas': 47062, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 22.0, 'humidity': 52, 'pressure': 1012.15, 'gas': 46904, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 22.0, 'humidity': 52, 'pressure': 1012.14, 'gas': 47062, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 22.0, 'humidity': 52, 'pressure': 1012.15, 'gas': 46957, 'wind_speed_kmh': 0.0}
+Tijdstip: 2025-03-28 20:25:16, Totaal aantal drukken: 0, Regenval: 0.00 mm
+Verstuurd naar RegenSensorUpload WebSocket: {'regenval': 0.0, 'tijdstip': '2025-03-28 20:25:16'}
+Start met tellen gedurende een minuut...
+Sent data: {'temperature': 22.0, 'humidity': 52, 'pressure': 1012.15, 'gas': 47062, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 22.0, 'humidity': 52, 'pressure': 1012.14, 'gas': 46957, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 22.0, 'humidity': 52, 'pressure': 1012.15, 'gas': 47009, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 22.0, 'humidity': 53, 'pressure': 1012.14, 'gas': 46904, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 22.0, 'humidity': 53, 'pressure': 1012.14, 'gas': 47115, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.9, 'humidity': 52, 'pressure': 1012.15, 'gas': 47167, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.9, 'humidity': 52, 'pressure': 1012.14, 'gas': 47220, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.9, 'humidity': 53, 'pressure': 1012.14, 'gas': 47380, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.9, 'humidity': 53, 'pressure': 1012.14, 'gas': 47273, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.9, 'humidity': 53, 'pressure': 1012.14, 'gas': 47220, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.9, 'humidity': 52, 'pressure': 1012.14, 'gas': 47088, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.9, 'humidity': 52, 'pressure': 1012.15, 'gas': 47167, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.9, 'humidity': 52, 'pressure': 1012.15, 'gas': 47193, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.9, 'humidity': 52, 'pressure': 1012.15, 'gas': 47433, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.9, 'humidity': 52, 'pressure': 1012.15, 'gas': 47433, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.9, 'humidity': 52, 'pressure': 1012.14, 'gas': 47621, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.15, 'gas': 47675, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.14, 'gas': 47460, 'wind_speed_kmh': 0.0}
+Tijdstip: 2025-03-28 20:26:16, Totaal aantal drukken: 0, Regenval: 0.00 mm
+Verstuurd naar RegenSensorUpload WebSocket: {'regenval': 0.0, 'tijdstip': '2025-03-28 20:26:16'}
+Start met tellen gedurende een minuut...
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.15, 'gas': 47486, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.14, 'gas': 47648, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.14, 'gas': 47594, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.15, 'gas': 47540, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.14, 'gas': 47567, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.13, 'gas': 47675, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.13, 'gas': 47648, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.13, 'gas': 48002, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.14, 'gas': 47811, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.14, 'gas': 48112, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.15, 'gas': 47920, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.14, 'gas': 48167, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.14, 'gas': 47974, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.14, 'gas': 47892, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.14, 'gas': 47811, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.14, 'gas': 48002, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.14, 'gas': 48277, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.15, 'gas': 48139, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.15, 'gas': 48057, 'wind_speed_kmh': 0.0}
+Tijdstip: 2025-03-28 20:27:16, Totaal aantal drukken: 0, Regenval: 0.00 mm
+Verstuurd naar RegenSensorUpload WebSocket: {'regenval': 0.0, 'tijdstip': '2025-03-28 20:27:16'}
+Start met tellen gedurende een minuut...
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.15, 'gas': 48112, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.15, 'gas': 48057, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.14, 'gas': 48112, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.13, 'gas': 48167, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.14, 'gas': 48556, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.14, 'gas': 48250, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.14, 'gas': 48500, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.14, 'gas': 48277, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.14, 'gas': 48277, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.13, 'gas': 48389, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.14, 'gas': 48361, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.14, 'gas': 48641, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.7, 'humidity': 53, 'pressure': 1012.14, 'gas': 48444, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.7, 'humidity': 53, 'pressure': 1012.13, 'gas': 48753, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.7, 'humidity': 53, 'pressure': 1012.14, 'gas': 48697, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.7, 'humidity': 53, 'pressure': 1012.14, 'gas': 48528, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.7, 'humidity': 53, 'pressure': 1012.13, 'gas': 48612, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.7, 'humidity': 53, 'pressure': 1012.14, 'gas': 48867, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.8, 'humidity': 53, 'pressure': 1012.13, 'gas': 48641, 'wind_speed_kmh': 0.0}
+Tijdstip: 2025-03-28 20:28:16, Totaal aantal drukken: 0, Regenval: 0.00 mm
+Verstuurd naar RegenSensorUpload WebSocket: {'regenval': 0.0, 'tijdstip': '2025-03-28 20:28:16'}
+Start met tellen gedurende een minuut...
+Sent data: {'temperature': 21.7, 'humidity': 53, 'pressure': 1012.13, 'gas': 48697, 'wind_speed_kmh': 0.0}
+Sent data: {'temperature': 21.7, 'humidity': 53, 'pressure': 1012.14, 'gas': 48753, 'wind_speed_kmh': 0.0}

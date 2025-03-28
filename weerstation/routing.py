@@ -1,7 +1,9 @@
-from django.urls import path
-from .consumers import SensorConsumer
+from django.urls import re_path
+from .consumers import SensorUpload, SensorReader, RegenSensorUpload
 
+# WebSocket URL's en hun respectieve consumers
 websocket_urlpatterns = [
-    path("ws/sensoren/", SensorConsumer.as_asgi()), #addres in postman: ws://192.168.0.232:8000/ws/sensoren/
-
+    re_path(r'ws/upload/$', SensorUpload.as_asgi()),   # Consumer voor het ontvangen van sensor data en opslaan
+    re_path(r'ws/liveSensorData/$', SensorReader.as_asgi()),   # Consumer voor het uitlezen van sensor data in realtime
+    re_path(r'ws/regensensor/$', RegenSensorUpload.as_asgi()),
 ]
