@@ -14,10 +14,10 @@ button_pin = 22  # GPIO-pin voor de drukknop
 GPIO.setup(button_pin, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 
 # WebSocket URL voor het versturen van regenval-data
-REGEN_WS_URL = "ws://192.168.0.232:8000/ws/regensensor/"
+REGEN_WS_URL = "ws://localhost:8000/ws/regensensor/"
 
 # Variabelen voor de regen sensor
-calibratie_factor = 132  # Aantal keer knop ingedrukt per 100 mm regen
+calibratie_factor = 132  # Aantal keer overgeschakeld per 100 mm regen
 running = True
 
 # Setup ADS1115 voor windsnelheid met de ADS1115 module

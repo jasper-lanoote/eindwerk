@@ -126,7 +126,6 @@ class SensorUpload(AsyncWebsocketConsumer):
             }
         )
 
-
 class SensorReader(AsyncWebsocketConsumer):
     async def connect(self):
         await self.accept()
@@ -155,9 +154,6 @@ class SensorReader(AsyncWebsocketConsumer):
     async def send_sensor_data(self, event):
         data = event['data']
         await self.send(text_data=json.dumps(data))
-
-
-logger = logging.getLogger(__name__)
 
 class RegenSensorUpload(AsyncWebsocketConsumer):
     async def connect(self):
